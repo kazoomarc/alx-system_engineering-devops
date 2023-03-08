@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Set the directory where the files are located
+directory="/alx-system_engineering-devops/0x00-shell_basics"
+
+# Change to the directory
+cd $directory
+
+# Loop through all files in the directory
+for file in *; do
+
+    # Skip the README.md file
+    if [ "$file" == "README.md" ]; then
+        continue
+    fi
+
+    # Add execute permission to the owner of the file
+    chmod u+x $file
+
+done
