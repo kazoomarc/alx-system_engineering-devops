@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -aQp --group-directories-first | sed ':a;N;$!ba;s/\n/, /g'
